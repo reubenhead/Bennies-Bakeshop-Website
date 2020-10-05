@@ -1,0 +1,1063 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC&display=swap');
+
+body {
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#page {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#page a {
+	text-decoration: none;
+}
+
+/* Text */
+
+h1 {
+	margin: 0 0 1em 0;
+	font-size: 2.8em;
+	font-weight: 700;
+}
+
+h2 {
+	margin: 0 0 0.5em 0;
+	font-size: 1.6em;
+	font-weight: 700;
+	line-height: 1.1em
+}
+
+h3 {
+	margin: 0 0 0.5em 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+h4 {
+	margin: 0 0 1.5em 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+a {
+	color: #555;
+}
+
+a:hover {
+	color: #9f572e;
+	font-weight: bold;
+}
+
+a:active {
+	color: #9f572e;
+}
+
+/* Clock */
+
+div#clock {
+	text-align: center;
+}
+
+/* Header */
+
+header {
+	height: 200px;
+	background: #fff;
+}
+
+header a.logo {
+	z-index: 1;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 280px;
+	height: 180px;
+	background: url(../images/logo_big.png) no-repeat 0 0;
+	background-size: contain;
+	top: 15px; left: 20px;
+}
+
+header a.logo span {
+	display: none;
+}
+
+/* Navigation */
+
+nav {
+	background-color: #fff;
+	position: relative;
+	padding: 0 0 0 0;
+	width: 35%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	border-right: 1px solid #555;
+}
+
+nav li:last-child {
+  	border:none;
+}
+
+/* Home Page */
+
+/* Section - Intro */
+
+div.intro {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+div.intro h3 {
+	color: #9f572e;
+}
+
+/* Section - Breakfast, Lunch */
+
+div.breakfast {
+	padding: 0;
+	text-align: center;
+}
+
+div.lunch {
+	clear: both;
+	padding: 0;
+	text-align: center;
+}
+
+div.breakfast h3, div.lunch h3 {
+	margin-left: 20px;
+	margin-bottom: 40px;
+	text-align: left;
+	color: #555
+}
+
+div.breakfast aside, div.lunch aside {
+	margin-bottom: 100px;
+	float: left;
+	width: 33.33%
+}
+
+div.breakfast aside img, div.lunch aside img {
+	margin-bottom: 10px;
+}
+
+div.breakfast aside img:hover, div.lunch aside img:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transform: scale(1.05);
+}
+
+div.breakfast aside h4, div.lunch aside h4 {
+	margin-left: 40px;
+	text-align: left;
+}
+
+div.breakfast aside h4:hover, div.lunch aside h4:hover {
+	color: #9f572e;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+div.breakfast aside p, div.lunch aside p {
+	margin-left: 40px;
+	font-size: 0.8em;
+	width: 250px;
+	text-align: left;
+}
+
+/* Section - Video */
+
+div.video {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+div.video h3 {
+	color: #9f572e;
+}
+
+/* Footer */
+
+footer {
+	clear: both;
+	font-size: 0.8em;
+	margin: 40px;
+	color: #555;
+	position: relative;
+	height: auto;
+	border-bottom: 1px solid #9f572e;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+div.socialMedia, div.socialMedia img {
+	height: 20px;
+	width: auto;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+div.socialMedia a.facebook {
+	margin: auto;
+	padding: 5px;
+}
+
+div.socialMedia a.instagram {
+	margin: auto;
+	padding: 5px;
+}
+
+div.copyright {
+	float: left;
+}
+
+div.policy {
+	font-size: 0.9em;
+	float: left;
+}
+
+div.address {
+	float: right;
+	text-align: right;
+}
+
+footer a {
+	margin-left: 30px;
+	color: #555;
+}
+
+footer a:visited {
+	color: #555;
+}
+
+footer a:hover {
+	color: #9f572e;
+}
+
+/* About Us Page */
+
+/* Div - Company, Staff */
+
+div.company, div.staff {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+div.company h3 {
+	color: #9f572e;
+}
+
+div.staff h3 {
+	color: #9f572e;
+	margin-bottom: 20px;
+}
+
+div.staff img {
+	height: auto;
+	width: 30%;
+}
+
+div.bennie img, div.susan img, div.rebecca img, div.duncan img {
+	float: left;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-moz-box-shadow: 4px 4px 15px #555;
+	-webkit-box-shadow: 4px 4px 15px #555;
+	box-shadow: 4px 4px 15px #555;
+}
+
+div.bennie p, div.bennie h4, div.susan p, div.susan h4, div.rebecca p, div.rebecca h4, div.duncan p, div.duncan h4 {
+	width: 65%;
+	float: right;
+}
+
+div.bennie, div.susan, div.rebecca {
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 100px;
+}
+
+div.duncan {
+	display: inline-block;
+	text-align: left;
+}
+
+/* Enquire Form */
+
+div.enquireForm {
+	text-align: center;
+	font-size: 0.9em;
+	width: 400px;
+	margin: auto;
+	margin-bottom: 100px;
+	display: none;
+}
+
+/* Review Form */
+
+div.reviewForm {
+	text-align: center;
+	font-size: 0.9em;
+	width: 400px;
+	margin: auto;
+	border-top: 1px solid #9f572e;
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+
+/* Feedback Form */
+
+div.feedbackForm {
+	text-align: center;
+	font-size: 0.9em;
+	width: 400px;
+	margin: auto;
+	border-top: 1px solid #9f572e;
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+  
+form div + div {
+	margin-top: 1em;
+}
+  
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: left;
+}
+  
+input, textarea {
+	font: 1em sans-serif;
+	width: 300px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+  
+input:focus, textarea:focus {
+	border-color: #000;
+}
+  
+textarea {
+	vertical-align: top;
+	height: 5em;
+}
+
+/* Menu Page */
+
+/* Div - Breakfast, Lunch, Dessert */
+
+div.breakfastMenu {
+	text-align: left;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+div.lunchMenu, div.dessertMenu {
+	clear: both;
+	text-align: left;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+div.breakfastMenu h3, div.lunchMenu h3, div.dessertMenu h3 {
+	color: #9f572e;
+}
+
+div.breakfastMenu p, div.lunchMenu p, div.dessertMenu p {
+	float: left;
+	width: 80%;
+	padding: 5px;
+	margin: 0;
+}
+
+div.breakfastMenu span, div.lunchMenu span, div.dessertMenu span {
+	float: right;
+	width: 10%;
+}
+
+/* Locations Page */
+
+/* Div - Hours, Location, Contact Us */
+
+div.hours, div.location, div.contactUs {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+div.hours h3, div.location h3, div.contactUs h3 {
+	color: #9f572e;
+}
+
+div.location p {
+	margin-bottom: 20px;
+}
+
+/* Events Page */
+
+/* Div - cafeImage */
+
+div.cafeImage {
+	text-align: center;
+	margin: auto;
+	margin-top: -80px;
+  	margin-bottom: 100px;
+}
+
+div.cafeImage img {
+	width: 100vw;
+	height: auto;
+	border-top: 1px solid #9f572e;
+	border-bottom: 1px solid #9f572e;
+	margin-left: calc(50% - 50vw);
+  	margin-right: calc(50% - 50vw);
+}
+
+/* Buttons */
+
+#likeButton {
+	margin: 0;
+	text-align: center;
+}
+
+div.submitButton {
+	text-align: left;
+	padding-left: 90px;
+	transition: 0s background-color;
+}
+  
+button {
+	font-family: 'IM Fell Double Pica SC', serif;
+	margin-left: .5em;
+}
+
+button:hover {
+	color: #fff;
+	background-color: #9f572e;
+	transition: background-color 1s;
+}
+
+/* iFrames */
+
+iframe {
+	margin-top: 20px;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-moz-box-shadow: 4px 4px 15px #555;
+	-webkit-box-shadow: 4px 4px 15px #555;
+	box-shadow: 4px 4px 15px #555;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+
+	div.breakfast aside img, div.lunch aside img {
+		width: 90%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	h1 {
+		font-size: 2.4em;
+	}
+
+	/* Header */
+	
+	header {
+		height: 160px;
+		background-position: left top;
+	}
+
+	header a.logo {
+		z-index: 1;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 280px;
+		height: 180px;
+		background: url(../images/logo_big.png) no-repeat 0 0;
+		background-size: contain;
+		top: 15px; left: 20px;
+	}
+	
+	/* Navigation */
+	
+	nav {
+		position: static;
+		width: 45%;
+		padding: 20px 15px;
+		margin-bottom: 50px;
+	}
+
+	/* Section - Breakfast, Lunch */
+
+	div.breakfast aside, div.lunch aside {
+		margin-bottom: 50px;
+		float: left;
+		width: 33.33%
+	}
+
+	div.breakfast aside img, div.lunch aside img {
+		width: 90%;
+		height: auto;
+	}
+
+	div.breakfast aside p, div.lunch aside p {
+		margin-left: 30px;
+		font-size: 0.7em;
+		width: 180px;
+		text-align: left;
+	}
+
+	/* Div - cafeImage */
+
+	div.cafeImage {
+		margin-top: -40px;
+		margin-bottom: 50px;
+	}
+
+	div.cafeImage img {
+		max-width: 1000px;
+	}
+
+	/* Div - Breakfast, Lunch, Dessert */
+
+	div.breakfastMenu, div.lunchMenu, div.dessertMenu {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 910px) {
+	
+	/* Div - cafeImage */
+
+	div.cafeImage {
+		margin-top: -40px;
+		margin-bottom: 50px;
+	}
+
+	div.cafeImage img {
+		max-width: 910px;
+	}
+
+	/* Div - Breakfast, Lunch, Dessert */
+
+	div.breakfastMenu, div.lunchMenu, div.dessertMenu {
+		margin-bottom: 50px;
+	}
+
+@media screen and (max-width: 825px) {
+	
+	h1 {
+		font-size: 2.2em;
+	}
+	
+	/* Header */
+	
+	header {
+		height: 160px;
+		background-position: left top;
+	}
+
+	header a.logo {
+		z-index: 1;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 280px;
+		height: 180px;
+		background: url(../images/logo_big.png) no-repeat 0 0;
+		background-size: contain;
+		top: 15px; left: 20px;
+	}
+	
+	/* Navigation */
+	
+	nav {
+		position: static;
+		width: 55%;
+		padding: 20px 15px;
+		margin-bottom: 50px;
+	}
+
+	/* Section - Breakfast, Lunch */
+
+	div.breakfast aside, div.lunch aside {
+		margin-bottom: 50px;
+		float: left;
+		width: 33.33%
+	}
+
+	div.breakfast aside img, div.lunch aside img {
+		width: 80%;
+		height: auto;
+	}
+
+	div.breakfast aside h4, div.lunch aside h4 {
+		font-size: 0.8em;
+		margin-left: 30px;
+		text-align: left;
+	}
+
+	div.breakfast aside p, div.lunch aside p {
+		margin-left: 30px;
+		font-size: 0.7em;
+		width: 150px;
+		text-align: left;
+	}
+
+	/* Div - Company, Staff */
+
+	div.staff {
+		text-align: center;
+	}
+
+	div.bennie, div.susan, div.rebecca, div.duncan {
+		display: inline-block;
+		width: 80%;
+		margin-bottom: 50px;
+	}
+
+	div.bennie img, div.susan img, div.rebecca img, div.duncan img {
+		margin-left: 15px;
+		width: 90%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	div.bennie h4, div.susan h4, div.rebecca h4, div.duncan h4 {
+		width: 100%;
+		text-align: center;
+	}
+	
+	div.bennie p, div.susan p, div.rebecca p, div.duncan p {
+		text-align: justify;
+		font-size: 0.7em;
+		width: 100%;
+	}
+
+	/* Div - cafeImage */
+
+	div.cafeImage {
+		margin-top: -40px;
+		margin-bottom: 50px;
+	}
+
+	div.cafeImage img {
+		max-width: 825px;
+	}
+
+	/* Div - Breakfast, Lunch, Dessert */
+
+	div.breakfastMenu, div.lunchMenu, div.dessertMenu {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	a.btn {
+		font-size: 1em;
+	}
+	
+	/* Header */
+	
+	header {
+		height: 160px;
+		background-position: left top;
+	}
+
+	header a.logo {
+		z-index: 1;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 280px;
+		height: 180px;
+		background: url(../images/logo_big.png) no-repeat 0 0;
+		background-size: contain;
+		top: 15px; left: 20px;
+	}
+	
+	/* Navigation */
+	
+	nav {
+		position: static;
+		width: 65%;
+		padding: 20px 15px;
+		margin-bottom: 50px;
+	}
+
+	/* Section - Breakfast, Lunch */
+
+	div.breakfast aside, div.lunch aside {
+		margin-bottom: 50px;
+		float: left;
+		width: 33.33%
+	}
+
+	div.breakfast aside img, div.lunch aside img {
+		width: 80%;
+		height: auto;
+	}
+
+	div.breakfast aside h4, div.lunch aside h4 {
+		font-size: 0.8em;
+		margin-left: 30px;
+		text-align: left;
+	}
+
+	div.breakfast aside p, div.lunch aside p {
+		margin-left: 30px;
+		font-size: 0.7em;
+		width: 150px;
+		text-align: left;
+	}
+
+	iframe {
+		width: 280px;
+		height: auto;
+	}
+
+	/* Footer */
+
+	div.footer1 {
+		overflow: hidden;
+	}
+
+	div.copyright {
+		text-align: center;
+		margin-top: 10px;
+		display: block;
+		width: 100%;
+	}
+	
+	div.policy {
+		text-align: center;
+		display: block;
+		width: 100%;
+		padding-bottom: 5px;
+	}
+
+	div.policy a {
+		text-align: center;
+		display: block;
+		width: 100%;
+		padding-bottom: 5px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	div.address {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+	}
+
+	/* Div - Company, Staff */
+
+	div.staff {
+		text-align: center;
+	}
+
+	div.bennie, div.susan, div.rebecca, div.duncan {
+		display: inline-block;
+		width: 80%;
+		margin-bottom: 50px;
+	}
+
+	div.bennie img, div.susan img, div.rebecca img, div.duncan img {
+		margin-left: 15px;
+		width: 90%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	div.bennie h4, div.susan h4, div.rebecca h4, div.duncan h4 {
+		width: 100%;
+		text-align: center;
+	}
+	
+	div.bennie p, div.susan p, div.rebecca p, div.duncan p {
+		text-align: justify;
+		font-size: 0.7em;
+		width: 100%;
+	}
+
+	/* Div - cafeImage */
+
+	div.cafeImage {
+		margin-top: -40px;
+		margin-bottom: 50px;
+	}
+
+	div.cafeImage img {
+		max-width: 760px;
+	}
+
+	/* Div - Breakfast, Lunch, Dessert */
+
+	div.breakfastMenu, div.lunchMenu, div.dessertMenu {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	
+	h1 {
+		font-size: 1em;
+	}
+
+	h3 {
+		margin-bottom: 0px;
+	}
+
+	a.btn {
+		font-size: 0.9em;
+	}
+	
+	/* Header */
+	
+	header {
+		height: 160px;
+		background-position: left top;
+	}
+
+	header a.logo {
+		z-index: 1;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 280px;
+		height: 180px;
+		background: url(../images/logo_big.png) no-repeat 0 0;
+		background-size: contain;
+		top: 15px; left: 20px;
+	}
+	
+	header a.logo span {
+		display: none;
+	}
+	
+	/* Navigation */
+	
+	nav {
+		position: static;
+		width: 75%;
+		padding: 20px 15px;
+		margin-bottom: 50px;
+	}
+
+	/* Section - Breakfast, Lunch */
+
+	div.breakfast aside, div.lunch aside {
+		margin-bottom: 50px;
+		float: left;
+		width: 33.33%
+	}
+
+	div.breakfast aside img, div.lunch aside img {
+		width: 80%;
+		height: auto;
+	}
+
+	div.breakfast aside h4, div.lunch aside h4 {
+		font-size: 0.7em;
+		margin-left: 20px;
+		text-align: left;
+	}
+
+	div.breakfast aside p, div.lunch aside p {
+		margin-left: 20px;
+		font-size: 0.7em;
+		width: 130px;
+		text-align: left;
+	}
+
+	iframe {
+		width: 250px;
+		height: auto;
+	}
+
+	/* Div - Company, Staff */
+
+	div.staff {
+		text-align: center;
+	}
+
+	div.bennie, div.susan, div.rebecca, div.duncan {
+		display: inline-block;
+		width: 80%;
+		margin-bottom: 50px;
+	}
+
+	div.bennie img, div.susan img, div.rebecca img, div.duncan img {
+		margin-left: 15px;
+		width: 90%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	div.bennie h4, div.susan h4, div.rebecca h4, div.duncan h4 {
+		width: 100%;
+		text-align: center;
+	}
+	
+	div.bennie p, div.susan p, div.rebecca p, div.duncan p {
+		text-align: justify;
+		font-size: 0.7em;
+		width: 100%;
+	}
+
+	/* Div - cafeImage */
+
+	div.cafeImage {
+		margin-top: -40px;
+		margin-bottom: 50px;
+	}
+
+	div.cafeImage img {
+		max-width: 650px;
+	}
+
+	/* Div - Breakfast, Lunch, Dessert */
+
+	div.breakfastMenu, div.lunchMenu, div.dessertMenu {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	
+	/* Navigation */
+	
+	nav {
+		position: static;
+		width: 100%;
+		padding: 20px 15px;
+		margin-bottom: 50px;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+
+	/* Section - Intro */
+
+	div.intro {
+		width: 80%;
+		margin-bottom: 50px;
+	}
+
+	/* Section - Breakfast, Lunch */
+
+	div.breakfast aside h4, div.lunch aside h4 {
+		font-size: 0.7em;
+		margin-left: 20px;
+		text-align: left;
+	}
+
+	div.breakfast aside p, div.lunch aside p {
+		margin-left: 20px;
+		font-size: 0.5em;
+		width: 80px;
+		text-align: left;
+	}
+
+	/* Div - Company, Staff */
+
+	div.staff {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	div.company {
+		font-size: 0.9em;
+		width: 90%;
+	}
+
+	div.feedbackForm {
+		text-align: center;
+		font-size: 0.9em;
+		width: 300px;
+		margin: auto;
+		border-top: 1px solid #9f572e;
+		padding-top: 50px;
+		margin-bottom: 100px;
+	}
+
+	#myForm {
+		width: 20px;
+	}
+
+	/* Div - Breakfast, Lunch, Dessert */
+
+	div.breakfastMenu, div.lunchMenu, div.dessertMenu {
+		font-size: 0.8em;
+		width: 90%;
+	}
+
+	/* Div - Location, Contact Us */
+
+	div.location, div.contactUs {
+		width: 90%;
+	}
+
+	div.video {
+		width: 90%;
+	}
+}
