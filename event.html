@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Event</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet1.css">
+
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	</head>
+
+	<body>
+		<div id="page">
+			<header>
+				<a class="logo" title="Bennie's Bakeshop" href="index.html"><span>Bennie's Bakeshop</span></a>
+			</header>
+
+			<nav>
+				<ul>
+					<li>
+						<a title="About Us" href="aboutUs.html">About Us</a>
+					</li>
+					<li>
+						<a title="Menu" href="menu.html">Menu</a>
+					</li>
+					<li>
+						<a title="Locations" href="location.html">Locations</a>
+					</li>
+					<li>
+						<a title="Events" href="event.html">Events</a>
+					</li>
+				</ul>
+			</nav>
+
+            <div class="cafeImage">
+					<img src="images\cafe2.jpg" alt="Cafe"></img>
+			</div>
+			
+			<div class="location">
+                <h3>BOOK AN EVENT AT BENNIE'S BAKESHOP</h3>
+                <p><i>
+					Whether for a work function, a family get-together or a celebration, join us at Bennie's Bakeshop for a private event suited to your taste.<br><br>
+					Find out more at<br><br>
+					events@benniesbakeshop.co.nz<br>
+					04-412-6029
+				</i></p>
+
+				<div class="enquireButton">
+					<button type="submit" onclick="enquireFunction()"> Enquire Now</button>
+				</div>
+			</div>
+
+			<div class="enquireForm">
+				<form id="myForm" name="myForm" action="thankYou.html" method="post">
+					<div>
+						<label for="user_name">Name:</label>
+						<input id="user_name" name="user_name" type="text">
+						<span id="user_name_msg"></span>
+					</div>
+
+					<div>
+						<label for="email">Email:</label>
+						<input id="email" name="email" type="email">
+						<span id="email_msg"></span>
+					</div>
+
+					<div>
+						<label for="user_message">Message:</label>
+						<textarea id="user_message" name="user_message"></textarea>
+						<span id="user_message_msg"></span>
+					</div>
+
+					<div class="submitButton">
+						<button id="submit" name="submit" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			
+			<div class="contactUs">
+                <h3>MONTHLY THEMED EVENTS</h3>
+                <p><i>
+					Check out our themed events which we hold on the last Friday of every month. Book in early so you don't miss out!<br><br>
+					Subscribe to our newsletter to find out more about our upcoming events and everything new happening at Bennie's Bakeshop.<br><br>
+					newsletter@benniesbakeshop.co.nz
+				</i></p>
+			
+			<div class="subscribeButton">
+				<button id="subscribeButton" type="submit" onclick="subscribeButtonFunction()">Subscribe</button>
+			</div>
+		</div>
+
+			<footer>
+				<div class="footer1">
+					<div class="socialMedia">
+						<a class="facebook" href="https://www.facebook.com">
+							<img src="images\facebook_brown.png" alt="Facebook"></img>
+						</a>
+						<a class="instagram" href="https://www.instagram.com">
+							<img src="images\instagram_brown.png" alt="Instagram"></img>
+						</a>
+					</div>
+
+					<div class="copyright">
+						<p>&copy; Bennie's Bakeshop</p>
+					</div>
+						
+					<div class="policy">
+						<p><a title="Privacy Policy" href="privacyPolicy.html">Privacy Policy</a>
+						<a title="Terms of Service" href="termsOfService.html">Terms of Service</a></p>
+					</div>
+
+					<div class="address">
+						<p>86 Aro Street, Aro Valley, Wellington 6021</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="text/babel">
+			window.onload = init;
+			
+			function init() {
+				var formsubmit = document.getElementById("submit");
+				if (formsubmit) {
+					formsubmit.onclick = checkForm;
+				}
+			}
+			
+			function checkForm() {
+				var firstname = document.getElementById('user_name').value;
+				var firstname_msg = document.getElementById('user_name_msg');
+				var valid = true;
+				
+				if (firstname.length < 2) {
+					firstname_msg.innerHTML = "Name should be at least 2 letters in length";
+					firstname_msg.className = 'error';
+					valid = false;
+				}
+				else {
+					firstname_msg.innerHTML = "";
+					firstname_msg.className = '';
+				}
+				
+				var email = document.getElementById('email').value;
+				var email_msg = document.getElementById('email_msg');
+				var emailRegExp = /^(\w+@[a-z\d]+?([a-z-\d_\.]*?)\.[a-z]{2,6})$/i;
+				
+				if (email != "" && !emailRegExp.test(email)) {
+					email_msg.innerHTML = "Must be a valid email address, or left blank.";
+					email_msg.className = 'error';
+					valid = false;
+				}
+				else {
+					email_msg.innerHTML = "";
+					email_msg.className = '';
+				}
+
+				var message = document.getElementById('user_message').value;
+				var message_msg = document.getElementById('user_message_msg');
+				var valid = true;
+				
+				if (message.length < 2) {
+					message_msg.innerHTML = "Message should be at least 2 letters in length";
+					message_msg.className = 'error';
+					valid = false;
+				}
+				else {
+					message_msg.innerHTML = "";
+					message_msg.className = '';
+				}
+			}
+
+			function enquireFunction() {
+				var x = document.querySelector(".enquireForm");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				}
+				else {
+					x.style.display = "block";
+				}
+			}
+
+			function subscribeButtonFunction() {
+				alert("Thanks for subscribing to our Newsletter. We have sent you an email; please click the link to complete your registration to our newsletter.");
+				var a= querySelector("#subscribeButton");
+				a.innerHTML = "Thanks for subscribing!";
+			}
+		</script>
+	</body>
+
+</html>

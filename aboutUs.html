@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>About Us</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet1.css">
+
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	</head>
+
+	<body>
+		<div id="page">
+			<header>
+				<a class="logo" title="Bennie's Bakeshop" href="index.html"><span>Bennie's Bakeshop</span></a>
+			</header>
+
+			<nav>
+				<ul>
+					<li>
+						<a title="About Us" href="aboutUs.html">About Us</a>
+					</li>
+					<li>
+						<a title="Menu" href="menu.html">Menu</a>
+					</li>
+					<li>
+						<a title="Locations" href="location.html">Locations</a>
+					</li>
+					<li>
+						<a title="Events" href="event.html">Events</a>
+					</li>
+				</ul>
+			</nav>
+
+            <div class="company">
+                <h3>OUR BAKESHOP</h3>
+				<p><i>
+					Bennie's Bakeshop has a long and proud history dating back to the late 1800's when Bennie's grandfather,
+					Alfred, starting a small, self-run bakeshop from his home in Aro Valley. The bakeshop quickly became a
+					regular for locals, and the popularity grew around the city. Now, Bennie has continued to uphold the pride
+					and dedication to the business by continuing the family tradition of providing only the very best pasteries
+					and cakes across all of Wellington!
+				</i></p>
+			</div>
+			
+			<div class="staff">
+				<h3>STAFF</h3>
+				<div class="bennie">
+					<h4>Bennie</h4>
+					<img src="images\bennie.jpg" alt="Susan"></img>
+					<p><i>Bennie has lived in Wellington his entire life and followed in his father's and grandfather's footsteps
+						by taking over the family business at the young age of 26. Jim has always had a natural talent for baking
+						and design which is shown in every handcrafted pastery and cake he has offered to his customers.</i></p>
+				</div>
+
+				<div class="susan">
+					<h4>Susan</h4>
+					<img src="images\susan.jpg" alt="Susan"></img>
+					<p><i>Susan joined Bennie's business shortly after they got married 36 years ago. Susan has great attention to
+						detail and makes a perfect fit as the business' administration clerk, keeping the business running in the
+						background while letting the others stick to doing what they do best, making the best baked goods!</i></p>
+				</div>
+
+				<div class="rebecca">
+					<h4>Rebecca</h4>
+					<img src="images\rebecca.jpg" alt="Rebecca"></img>
+					<p><i>Rebecca joined Bennie's Bakeshop three years ago after her graduation from baking school. Rebecca says she
+						loves the personal connection she gets to all the customers she meets and loves the variety of the work. One
+						day, Rebecca hopes to start her own bakeshop too.</i></p>
+				</div>
+
+				<div class="duncan">
+					<h4>Duncan</h4>
+					<img src="images\duncan.jpg" alt="Duncan"></img>
+					<p><i>Duncan started at Bennie's Bakeshop eight years ago as an after school job, doing cleaning and tidying around
+						the store. Duncan slowly started learning baking and designing tips from Bennie, and starting putting his
+						learning into practice. Duncan started from the bottom and has rightfully worked his way up, and is now a highly
+						valued member of the Bennie's Bakeshop team.</i></p>
+				</div>
+			</div>
+
+			<div class="feedbackForm">
+				<p>
+					We'd love to hear your feedback.<br>
+					Enter your comments below or leave a review on our Trip Advisor page - just search Bennie's Bakeshop.<br><br>
+					Each review goes in the draw to win a $250 dinner voucher for two!
+				</p>
+				<form id="myForm" name="myForm" action="thankYou.html" method="post">
+					<div>
+					  <label for="user_name">Name:</label>
+						<input id="user_name" name="user_name" type="text">
+						<span id="user_name_msg"></span>
+					</div>
+
+					<div>
+					  <label for="email">Email:</label>
+						<input id="email" name="email" type="email">
+						<span id="email_msg"></span>
+					</div>
+
+					<div>
+					  <label for="user_message">Message:</label>
+						<textarea id="user_message" name="user_message"></textarea>
+						<span id="user_message_msg"></span>
+					</div>
+
+					<div class="submitButton">
+						<button id="submit" name="submit" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+
+			<footer>
+				<div class="footer1">
+					<div class="socialMedia">
+						<a class="facebook" href="https://www.facebook.com">
+							<img src="images\facebook_brown.png" alt="Facebook"></img>
+						</a>
+						<a class="instagram" href="https://www.instagram.com">
+							<img src="images\instagram_brown.png" alt="Instagram"></img>
+						</a>
+					</div>
+
+					<div class="copyright">
+						<p>&copy; Bennie's Bakeshop</p>
+					</div>
+						
+					<div class="policy">
+						<p><a title="Privacy Policy" href="privacyPolicy.html">Privacy Policy</a>
+						<a title="Terms of Service" href="termsOfService.html">Terms of Service</a></p>
+					</div>
+
+					<div class="address">
+						<p>86 Aro Street, Aro Valley, Wellington 6021</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="text/babel">
+			window.onload = init;
+			
+			function init() {
+				var formsubmit = document.getElementById("submit");
+				if (formsubmit) {
+					formsubmit.onclick = checkForm;
+				}
+			}
+			
+			function checkForm() {
+				var firstname = document.getElementById('user_name').value;
+				var firstname_msg = document.getElementById('user_name_msg');
+				var valid = true;
+				
+				if (firstname.length < 2) {
+					firstname_msg.innerHTML = "Name should be at least 2 letters in length";
+					firstname_msg.className = 'error';
+					valid = false;
+				}
+				else {
+					firstname_msg.innerHTML = "";
+					firstname_msg.className = '';
+				}
+				
+				var email = document.getElementById('email').value;
+				var email_msg = document.getElementById('email_msg');
+				var emailRegExp = /^(\w+@[a-z\d]+?([a-z-\d_\.]*?)\.[a-z]{2,6})$/i;
+				
+				if (email != "" && !emailRegExp.test(email)) {
+					email_msg.innerHTML = "Must be a valid email address, or left blank.";
+					email_msg.className = 'error';
+					valid = false;
+				}
+				else {
+					email_msg.innerHTML = "";
+					email_msg.className = '';
+				}
+
+				var message = document.getElementById('user_message').value;
+				var message_msg = document.getElementById('user_message_msg');
+				var valid = true;
+				
+				if (message.length < 2) {
+					message_msg.innerHTML = "Message should be at least 2 letters in length";
+					message_msg.className = 'error';
+					valid = false;
+				}
+				else {
+					message_msg.innerHTML = "";
+					message_msg.className = '';
+				}
+			}
+		</script>
+	</body>
+</html>

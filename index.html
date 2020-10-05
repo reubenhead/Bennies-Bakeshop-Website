@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bennie's Bakeshop</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet1.css">
+
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	</head>
+
+	<body>
+		<div id="page">
+
+				<div id="clock"></div>
+
+			<header>
+				<a class="logo" title="Bennie's Bakeshop" href="index.html"><span>Bennie's Bakeshop</span></a>
+			</header>
+
+			<nav>
+				<ul>
+					<li>
+						<a title="About Us" href="aboutUs.html">About Us</a>
+					</li>
+					<li>
+						<a title="Menu" href="menu.html">Menu</a>
+					</li>
+					<li>
+						<a title="Locations" href="location.html">Locations</a>
+					</li>
+					<li>
+						<a title="Events" href="event.html">Events</a>
+					</li>
+				</ul>
+			</nav>
+
+            <div class="intro">
+                <h3>BENNIE'S BAKESHOP CAKES AND PASTERIES</h3>
+                <p><i>Chef Bennie Anderson's cakes and pastries are perfect for gifting and will make any party sweeter.
+                    Place your order online, and pick-up at Bennie's Bakeshop.</i></p>
+			</div>
+			
+			<div class="breakfast">
+				<h3>Pasteries</h3>
+				<aside>
+					<div class="breakfast1">
+						<img src="images/pastery6.jpg" onclick="pastery1Function()" alt="Food" height="240" width="352">
+						<h4 onclick="pastery1Function()">Cinnamon Scroll</h4>
+						<p><i>Try our Cinnamon Scroll; traditional pastry filled with cinnamon, coated with our own creamy vanilla icing.</i></p>
+					</div>
+				</aside>
+				
+				<aside>
+					<div class="breakfast2">
+						<img src="images/pastery5.jpg" onclick="pastery2Function()" alt="Food" height="240" width="352">
+						<h4 onclick="pastery2Function()">Chocolate Croissant</h4>
+						<p><i>You can't beat the soft, flaky taste and texture of our croissant drizzled with our homemade French chocolate.</i></p>
+					</div>
+				</aside>
+				
+				<aside>
+					<div class="breakfast3">
+						<img src="images/pastery4.jpg" onclick="pastery3Function()" alt="Food" height="240" width="352">
+						<h4 onclick="pastery3Function()">Almond Croissant</h4>
+						<p><i>Our Almond Croissant features a rich, almond flan enveloped in our classic flaky croissant, topped with shredded almonds.</i></p>
+					</div>
+				</aside>
+			</div>
+			
+			<div class="lunch">
+				<h3>Cakes & Slices</h3>
+				<aside>
+					<div class="lunch1">
+						<img src="images/cake5.jpg" onclick="cake1Function()" alt="Food" height="240" width="352">
+						<h4 onclick="cake1Function()">Caramel Coconut Balls</h4>
+						<p><i>Sweet caramel mixed with shredded coconut and vanilla to form this delectable handmade treat.</i></p>
+					</div>
+				</aside>
+				
+				<aside>
+					<div class="lunch2">
+						<img src="images/cake4.jpg" onclick="cake2Function()" alt="Food" height="240" width="352">
+						<h4 onclick="cake2Function()">Chocolate & Raspberry Brownie</h4>
+						<p><i>Our brownie is mixed with our rich creamy chocolate, and finished with raspberry pieces and chocolate chunks.</i></p>
+					</div>
+				</aside>
+				
+				<aside>
+					<div class="lunch3">
+						<img src="images/cake6.jpg" onclick="cake3Function()" alt="Food" height="240" width="352">
+						<h4 onclick="cake3Function()">Creamy Chocoalte Mousse</h4>
+						<p><i>A favourite with the locals, the creamy consistency of this mousse will have you coming back for more.</i></p>
+					</div>
+				</aside>
+			</div>
+
+			<div class="video">
+				<iframe
+					width="560" height="315" src="https://www.youtube.com/embed/U_MXFP_kguA" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</div>
+
+			<div id="likeButton">
+				
+			</div>
+
+			<footer>
+				<div class="footer1">
+					<div class="socialMedia">
+						<a class="facebook" href="https://www.facebook.com">
+							<img src="images\facebook_brown.png" alt="Facebook"></img>
+						</a>
+						<a class="instagram" href="https://www.instagram.com">
+							<img src="images\instagram_brown.png" alt="Instagram"></img>
+						</a>
+					</div>
+
+					<div class="copyright">
+						<p>&copy; Bennie's Bakeshop</p>
+					</div>
+						
+					<div class="policy">
+						<p><a title="Privacy Policy" href="privacyPolicy.html">Privacy Policy</a>
+						<a title="Terms of Service" href="termsOfService.html">Terms of Service</a></p>
+					</div>
+
+					<div class="address">
+						<p>86 Aro Street, Aro Valley, Wellington 6021</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+	<script type="text/babel">
+
+		function pastery1Function() {
+			alert("Try our Cinnamon Scroll for $4.90. Try in store now!");
+		}
+
+		function pastery2Function() {
+			alert("Try our Chocolate Croissant for $4.90. Try in store now!");
+		}
+
+		function pastery3Function() {
+			alert("Try our Almond Croissant for $3.30. Try in store now!");
+		}
+
+		function cake1Function() {
+			alert("Treat yourself to our Caramel Coconut Balls for $2.80. Order in store or online now!");
+		}
+
+		function cake2Function() {
+			alert("Treat yourself to our Chocolate & Raspberry Brownie for $5.90. Order in store or online now!");
+		}
+
+		function cake3Function() {
+			alert("Treat yourself to our Creamy Chocolate Mousse for $6.90. Order in store or online now!");
+		}
+			
+		const e = React.createElement;
+		
+		class LikeButton extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = {
+					liked: false
+				};
+			}
+			
+			render() {
+				if (this.state.liked) {
+					return 'You liked this.';
+				}
+				
+				return e(
+					'button',
+					{
+						onClick: () => this.setState({ liked: true })
+					},
+					'Like our website'
+				);
+			}
+		}
+		
+		const domContainer = document.querySelector('#likeButton');
+		ReactDOM.render(e(LikeButton), domContainer);
+
+		const clock = document.querySelector('#clock');
+
+		function tick(){
+			const date = new Date().toLocaleTimeString();
+			const element = (
+			<div> 
+				<h6>{date}</h6>
+			</div>
+			);
+			ReactDOM.render(element, clock);
+		}
+
+		setInterval(tick, 1000);
+	</script>
+
+</html>
